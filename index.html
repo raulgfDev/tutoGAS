@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <?!= obtenerDatosHTML('css'); ?>
+    
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <?!= obtenerDatosHTML('header'); ?>
+
+    <?!= obtenerDatosHTML('main'); ?>
+<!-- comunico doGet() con index, no funciona resto de .html -->
+    <h2> <?= datos.data1; ?> </h2>
+    <h2> <?= datos.data2; ?> </h2>
+
+    <?!= obtenerDatosHTML('footer'); ?>
+
+    <?!= obtenerDatosHTML('js'); ?>
+    
+</body>
+
+</html>
